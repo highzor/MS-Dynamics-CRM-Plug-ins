@@ -14,9 +14,6 @@ namespace Custom.WorkFlowAction1
         [ReferenceTarget("email")]
         public InArgument<EntityReference> DescEmail { get; set; }
 
-        [Output("String output")]
-        public OutArgument<string> ChDescEmail { get; set; }
-
         protected override void Execute(CodeActivityContext context)
         {
             IWorkflowContext workflowContext = context.GetExtension<IWorkflowContext>();
